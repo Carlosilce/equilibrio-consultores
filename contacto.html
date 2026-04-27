@@ -1,0 +1,103 @@
+<!-- ===================================================
+     contacto.html — Formulario y datos de contacto
+     La validación está en js/main.js
+     =================================================== -->
+<div class="contacto">
+  <div class="container">
+    <div class="contacto__header reveal">
+      <span class="section-label">Hablemos</span>
+      <h2>Contáctanos</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="contacto__grid">
+
+      <!-- Columna izquierda: info de contacto -->
+      <div class="contacto__info reveal">
+        <h3>¿Listo para ordenar tus finanzas?</h3>
+        <p>Escríbenos o llámanos. La primera consulta es sin costo y sin compromiso.</p>
+
+        <div class="contacto__dato">
+          <div class="contacto__dato-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contacto__dato-label">Correo</div>
+            <div class="contacto__dato-value">contacto@equilibrioconsultores.mx</div>
+          </div>
+        </div>
+
+        <div class="contacto__dato">
+          <div class="contacto__dato-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="contacto__dato-label">Teléfono</div>
+            <div class="contacto__dato-value">55 1234 5678</div>
+          </div>
+        </div>
+
+        <div class="contacto__dato">
+          <div class="contacto__dato-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contacto__dato-label">Ubicación</div>
+            <div class="contacto__dato-value">Ciudad de México, México</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha: formulario -->
+      <div class="contacto__form reveal reveal-delay-2">
+        <form id="contactForm" novalidate>
+
+          <div class="form-row">
+            <div class="form-group" id="group-nombre">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+              <span class="error-msg">Por favor ingresa tu nombre.</span>
+            </div>
+            <div class="form-group" id="group-correo">
+              <label for="correo">Correo electrónico *</label>
+              <input type="email" id="correo" name="correo" placeholder="tu@correo.com" />
+              <span class="error-msg">Ingresa un correo válido.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telefono">Teléfono (opcional)</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="55 0000 0000" />
+            </div>
+            <div class="form-group" id="group-servicio">
+              <label for="servicio">Servicio que necesitas *</label>
+              <select id="servicio" name="servicio">
+                <option value="">Selecciona un servicio</option>
+                <option value="contable">Consultoría Contable</option>
+                <option value="fiscal">Declaraciones Fiscales</option>
+                <option value="auditoria">Auditoría Financiera</option>
+                <option value="asesoria">Asesoría Financiera</option>
+                <option value="otro">Otro / No sé aún</option>
+              </select>
+              <span class="error-msg">Selecciona un servicio.</span>
+            </div>
+          </div>
+
+          <div class="form-group" id="group-mensaje">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente sobre tu empresa y lo que necesitas..."></textarea>
+            <span class="error-msg">Por favor escribe tu mensaje.</span>
+          </div>
+
+          <button type="submit" class="btn btn--primary form__submit">Enviar mensaje</button>
+        </form>
+
+        <!-- Mensaje de éxito (se muestra al enviar) -->
+        <div class="form__success" id="formSuccess">
+          ✓ ¡Mensaje enviado! Te contactaremos en menos de 24 horas.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
