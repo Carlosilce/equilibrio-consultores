@@ -5,13 +5,19 @@
 
 /* --- VARIABLES GLOBALES --- */
 :root {
+--color-primary:       #1B2E4B;
+--color-primary-light: #2E4E7A;
+--color-accent:        #C09A3C;
+--color-accent-light:  #D4B56A;
+--color-bg:            #F5F3EE;
+--color-surface:       #FFFFFF;
   /* Paleta principal: verde profundo + dorado + crema */
-  --color-primary:      #1B4332;   /* verde oscuro: confianza, solidez */
-  --color-primary-light:#2D6A4F;   /* verde medio: hover, acentos */
-  --color-accent:       #B7882C;   /* dorado: profesionalismo, distinción */
-  --color-accent-light: #D4A853;   /* dorado claro: hover del acento */
-  --color-bg:           #F9F7F3;   /* crema: fondo cálido, no frío */
-  --color-surface:      #FFFFFF;   /* blanco puro: tarjetas */
+ /* --color-primary:      #1B4332;   /* verde oscuro: confianza, solidez */
+ /* --color-primary-light:#2D6A4F;   /* verde medio: hover, acentos */
+ /* --color-accent:       #B7882C;   /* dorado: profesionalismo, distinción */
+ /* --color-accent-light: #D4A853;   /* dorado claro: hover del acento */
+ /* --color-bg:           #F9F7F3;   /* crema: fondo cálido, no frío */
+ /* --color-surface:      #FFFFFF;   /* blanco puro: tarjetas */
   --color-surface-alt:  #F2EFE8;   /* crema oscuro: fondos de sección alternos */
   --color-text:         #1A1A1A;   /* negro suave: texto principal */
   --color-text-muted:   #5C5C5C;   /* gris medio: texto secundario */

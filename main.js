@@ -1,36 +1,18 @@
 /* ============================================================
    main.js — Lógica principal del sitio Equilibrio Consultores
-   Incluye: carga de secciones, navbar, scroll, acordeón, formulario
+   Incluye: navbar, scroll, acordeón, formulario
    ============================================================ */
 
-/* ---- 1. CARGA DE SECCIONES HTML (sistema modular) ----
-   Cada sección vive en su propio archivo dentro de /sections/
-   Esta función los inserta en los placeholders del index.html
+/* ---- 1. INICIALIZACIÓN AL CARGAR LA PÁGINA ----
+   Las secciones ya están incluidas directamente en index.html
+   Solo inicializamos la funcionalidad interactiva
    -------------------------------------------------------- */
-async function cargarSeccion(archivoHTML, idPlaceholder) {
-  try {
-    const respuesta = await fetch(archivoHTML);
-    const html = await respuesta.text();
-    document.getElementById(idPlaceholder).innerHTML = html;
-  } catch (error) {
-    console.error(`Error al cargar ${archivoHTML}:`, error);
-  }
-}
-
-/* Carga todas las secciones al iniciar la página */
-async function cargarTodasLasSecciones() {
-  await Promise.all([
-    cargarSeccion('hero.html',        'hero-placeholder'),
-    cargarSeccion('servicios.html',   'servicios-placeholder'),
-    cargarSeccion('testimonios.html', 'testimonios-placeholder'),
-    cargarSeccion('faq.html',         'faq-placeholder'),
-    cargarSeccion('contacto.html',    'contacto-placeholder'),
-  ]);
-  /* Después de cargar, inicializamos todo lo que depende del DOM */
+document.addEventListener('DOMContentLoaded', () => {
+  iniciarNavbar();
   iniciarRevealAlScroll();
   iniciarAcordeonFAQ();
   iniciarFormularioContacto();
-}
+});
 
 /* ---- 2. NAVBAR: cambio de estilo al hacer scroll ----
    Añade la clase .scrolled cuando el usuario baja más de 60px

@@ -12,8 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Estilos globales y de componentes -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="components.css" />
 </head>
 <body>
 
@@ -39,27 +39,276 @@
 
   <!-- ========== SECCIÓN HERO ========== -->
   <section id="inicio">
-    <div id="hero-placeholder"></div>
+    <div class="hero">
+      <div class="container">
+        <div class="hero__content reveal">
+          <span class="hero__label">Consultoría Contable · CDMX</span>
+          <h1>Tu empresa merece un <em>equilibrio</em> financiero real</h1>
+          <p class="hero__desc">
+            Asesoramos a empresas y emprendedores con soluciones contables precisas,
+            estratégicas y completamente adaptadas a su realidad.
+          </p>
+          <div class="hero__cta">
+            <a href="#contacto" class="btn btn--primary">Agenda una consulta</a>
+            <a href="#servicios" class="btn btn--outline" style="color:#fff; border-color:rgba(255,255,255,0.4);">Ver servicios</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__line"></div>
+      <div class="hero__scroll">Scroll</div>
+    </div>
   </section>
 
   <!-- ========== SECCIÓN SERVICIOS ========== -->
   <section id="servicios">
-    <div id="servicios-placeholder"></div>
+    <div class="servicios">
+      <div class="container">
+        <div class="servicios__header reveal">
+          <span class="section-label">Lo que hacemos</span>
+          <h2>Nuestros servicios</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="servicios__grid">
+          <div class="servicio-card reveal reveal-delay-1">
+            <div class="servicio-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M9 7H6a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-3"/><path d="M9 15h3l8.5-8.5a2 2 0 00-3-3L9 12v3"/></svg>
+            </div>
+            <h3>Consultoría Contable</h3>
+            <p>Diagnóstico, organización y optimización de tu contabilidad. Tomamos el control de tus números para que tú te concentres en crecer.</p>
+          </div>
+          <div class="servicio-card reveal reveal-delay-2">
+            <div class="servicio-card__icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Declaraciones Fiscales</h3>
+            <p>Presentamos tus declaraciones anuales, mensuales y complementarias ante el SAT con precisión y siempre en tiempo.</p>
+          </div>
+          <div class="servicio-card reveal reveal-delay-3">
+            <div class="servicio-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M2 12h20M2 6h20M2 18h20"/><circle cx="18" cy="12" r="3" fill="none"/></svg>
+            </div>
+            <h3>Auditoría Financiera</h3>
+            <p>Revisión independiente de tus estados financieros para garantizar exactitud, transparencia y cumplimiento normativo.</p>
+          </div>
+          <div class="servicio-card reveal reveal-delay-4">
+            <div class="servicio-card__icon">
+              <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h3>Asesoría Financiera</h3>
+            <p>Planeación estratégica, análisis de flujo de caja y toma de decisiones financieras con información sólida y confiable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ========== SECCIÓN TESTIMONIOS ========== -->
   <section id="testimonios">
-    <div id="testimonios-placeholder"></div>
+    <div class="testimonios">
+      <div class="container">
+        <div class="testimonios__header reveal">
+          <span class="section-label">Lo que dicen nuestros clientes</span>
+          <h2>Resultados que hablan</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="testimonios__grid">
+          <div class="testimonio-card reveal reveal-delay-1">
+            <div class="testimonio-card__stars">★★★★★</div>
+            <p class="testimonio-card__text">
+              "Llevábamos años con atrasos fiscales y sin claridad en nuestras finanzas.
+              Equilibrio Consultores ordenó todo en menos de tres meses. Hoy tenemos
+              visibilidad total de nuestra empresa."
+            </p>
+            <div class="testimonio-card__author">
+              <div class="testimonio-card__avatar">MR</div>
+              <div>
+                <div class="testimonio-card__name">Mónica Reyes</div>
+                <div class="testimonio-card__empresa">Directora · Grupo Reyes Textil</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonio-card reveal reveal-delay-2">
+            <div class="testimonio-card__stars">★★★★★</div>
+            <p class="testimonio-card__text">
+              "Como emprendedor, los temas contables siempre me generaban ansiedad.
+              El equipo me explicó todo con claridad y ahora entiendo mis números.
+              Su acompañamiento ha sido invaluable."
+            </p>
+            <div class="testimonio-card__author">
+              <div class="testimonio-card__avatar">CA</div>
+              <div>
+                <div class="testimonio-card__name">Carlos Aguirre</div>
+                <div class="testimonio-card__empresa">Fundador · Cafés Aguirre CDMX</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonio-card reveal reveal-delay-3">
+            <div class="testimonio-card__stars">★★★★★</div>
+            <p class="testimonio-card__text">
+              "Profesionalismo y respuesta inmediata. Presentaron nuestras declaraciones
+              anuales sin contratiempos y encontraron deducciones que nosotros
+              habíamos pasado por alto. Totalmente recomendados."
+            </p>
+            <div class="testimonio-card__author">
+              <div class="testimonio-card__avatar">LP</div>
+              <div>
+                <div class="testimonio-card__name">Laura Pacheco</div>
+                <div class="testimonio-card__empresa">CFO · Constructora Pacífico Sur</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ========== SECCIÓN FAQ ========== -->
   <section id="faq">
-    <div id="faq-placeholder"></div>
+    <div class="faq">
+      <div class="container">
+        <div class="faq__header reveal">
+          <span class="section-label">Preguntas frecuentes</span>
+          <h2>Resolvemos tus dudas</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="faq__list reveal">
+          <div class="faq-item">
+            <button class="faq-item__question">
+              ¿Qué documentos necesito para contratar sus servicios?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Para comenzar necesitamos tu RFC y contraseña del SAT, estados de cuenta bancarios de los últimos 3 meses, facturas emitidas y recibidas del periodo a trabajar y, si ya tienes contabilidad previa, los archivos de tu sistema contable. Te guiamos paso a paso desde el primer contacto.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              ¿Trabajan con empresas de todos los tamaños?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Sí. Atendemos desde personas físicas con actividad empresarial y startups hasta empresas medianas con múltiples unidades de negocio. Nuestros planes se adaptan al volumen de operaciones y las necesidades específicas de cada cliente.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              ¿Cuánto cuesta una consultoría inicial?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>La primera consulta de diagnóstico es sin costo. En ella evaluamos tu situación actual y te presentamos una propuesta personalizada. Los honorarios varían según el tipo de régimen fiscal, el volumen de operaciones y los servicios que requieras.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              ¿Ofrecen servicio en línea o solo presencial?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Trabajamos de forma completamente remota. Utilizamos plataformas seguras para el intercambio de documentos y tenemos reuniones virtuales periódicas para revisar el estado de tu contabilidad. Clientes en toda la República Mexicana pueden contratarnos sin problema.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              ¿Cómo protegen la confidencialidad de mi información?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Firmamos un acuerdo de confidencialidad (NDA) con cada cliente antes de iniciar. Toda la información se almacena en servidores cifrados con acceso restringido. Seguimos estrictamente las disposiciones del IMSS, SAT y la Ley Federal de Protección de Datos Personales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ========== SECCIÓN CONTACTO ========== -->
   <section id="contacto">
-    <div id="contacto-placeholder"></div>
+    <div class="contacto">
+      <div class="container">
+        <div class="contacto__header reveal">
+          <span class="section-label">Hablemos</span>
+          <h2>Contáctanos</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="contacto__grid">
+          <div class="contacto__info reveal">
+            <h3>¿Listo para ordenar tus finanzas?</h3>
+            <p>Escríbenos o llámanos. La primera consulta es sin costo y sin compromiso.</p>
+            <div class="contacto__dato">
+              <div class="contacto__dato-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="contacto__dato-label">Correo</div>
+                <div class="contacto__dato-value">contacto@equilibrioconsultores.mx</div>
+              </div>
+            </div>
+            <div class="contacto__dato">
+              <div class="contacto__dato-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contacto__dato-label">Teléfono</div>
+                <div class="contacto__dato-value">55 1234 5678</div>
+              </div>
+            </div>
+            <div class="contacto__dato">
+              <div class="contacto__dato-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contacto__dato-label">Ubicación</div>
+                <div class="contacto__dato-value">Ciudad de México, México</div>
+              </div>
+            </div>
+          </div>
+          <div class="contacto__form reveal reveal-delay-2">
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group" id="group-nombre">
+                  <label for="nombre">Nombre completo *</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+                  <span class="error-msg">Por favor ingresa tu nombre.</span>
+                </div>
+                <div class="form-group" id="group-correo">
+                  <label for="correo">Correo electrónico *</label>
+                  <input type="email" id="correo" name="correo" placeholder="tu@correo.com" />
+                  <span class="error-msg">Ingresa un correo válido.</span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="telefono">Teléfono (opcional)</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="55 0000 0000" />
+                </div>
+                <div class="form-group" id="group-servicio">
+                  <label for="servicio">Servicio que necesitas *</label>
+                  <select id="servicio" name="servicio">
+                    <option value="">Selecciona un servicio</option>
+                    <option value="contable">Consultoría Contable</option>
+                    <option value="fiscal">Declaraciones Fiscales</option>
+                    <option value="auditoria">Auditoría Financiera</option>
+                    <option value="asesoria">Asesoría Financiera</option>
+                    <option value="otro">Otro / No sé aún</option>
+                  </select>
+                  <span class="error-msg">Selecciona un servicio.</span>
+                </div>
+              </div>
+              <div class="form-group" id="group-mensaje">
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente sobre tu empresa y lo que necesitas..."></textarea>
+                <span class="error-msg">Por favor escribe tu mensaje.</span>
+              </div>
+              <button type="submit" class="btn btn--primary form__submit">Enviar mensaje</button>
+            </form>
+            <div class="form__success" id="formSuccess">
+              ✓ ¡Mensaje enviado! Te contactaremos en menos de 24 horas.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ========== FOOTER ========== -->
@@ -80,8 +329,8 @@
   <div id="whatsapp-placeholder"></div>
 
   <!-- Scripts principales -->
-  <script src="js/main.js"></script>
-  <script src="js/whatsapp.js"></script>
+  <script src="main.js"></script>
+  <script src="whatsapp.js"></script>
 
 </body>
 </html>

@@ -121,6 +121,7 @@
 .hero {
   min-height: 100vh;
   background: var(--color-primary);
+  background-image: url('../assets/img/hero-bg1.jpg');  /* ← BackGround de hero */
   position: relative;
   display: flex;
   align-items: center;
@@ -283,6 +284,16 @@
 .servicio-card p {
   font-size: 0.92rem;
   line-height: 1.7;
+}
+
+.servicios__foto img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  margin: 0 auto 3rem;
+  display: block;
+  object-fit: cover;
+  height: 320px;
 }
 
 /* ==================== TESTIMONIOS ==================== */
