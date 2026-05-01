@@ -20,11 +20,11 @@ async function cargarSeccion(archivoHTML, idPlaceholder) {
 /* Carga todas las secciones al iniciar la página */
 async function cargarTodasLasSecciones() {
   await Promise.all([
-    cargarSeccion('sections/hero.html',        'hero-placeholder'),
-    cargarSeccion('sections/servicios.html',   'servicios-placeholder'),
-    cargarSeccion('sections/testimonios.html', 'testimonios-placeholder'),
-    cargarSeccion('sections/faq.html',         'faq-placeholder'),
-    cargarSeccion('sections/contacto.html',    'contacto-placeholder'),
+    cargarSeccion('hero.html',        'hero-placeholder'),
+    cargarSeccion('servicios.html',   'servicios-placeholder'),
+    cargarSeccion('testimonios.html', 'testimonios-placeholder'),
+    cargarSeccion('faq.html',         'faq-placeholder'),
+    cargarSeccion('contacto.html',    'contacto-placeholder'),
   ]);
   /* Después de cargar, inicializamos todo lo que depende del DOM */
   iniciarRevealAlScroll();
